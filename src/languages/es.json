@@ -1,0 +1,57 @@
+{
+    "language": "es",
+    "languageName": "Español",
+    "title": "Dev. Matias Micchele",
+    "navbar":[
+        {
+            "name":"Principal",
+            "path":""            
+        },
+        {
+            "name":"Experiencia",
+            "path":""            
+        },
+        {
+            "name":"Proyectos",
+            "path":""            
+        },{
+            "name":"Sobre Mí",
+            "path":""            
+        }        
+    ],
+    "hero":{
+        "message": "¡Hola! Soy <span class='text-primary'>Matías</span>, desarrollador Fullstack",
+        "description": "Desarrollador Fullstack con más de 4 años creando soluciones web y de escritorio para negocios reales. He trabajado en proyectos del sector asegurador y contable, desarrollando plataformas a medida con Angular, Node.js, PostgreSQL y Progress OpenEdge. Mi enfoque es crear aplicaciones seguras, escalables y alineadas con los procesos de cada cliente.",
+        "btn_projects": "Ver Proyectos",
+        "btn_cv": "Descargar CV"
+    },
+    "experience":{
+        "title": "Experiencia Laboral",
+        "job":{
+            "title_one":"Desarrollo de Aplicaciones de Escritorio (Progress OpenEdge)",
+            "duration_one": "2020 – Actualidad",
+            "description_one": "Desde 2020 participo en el desarrollo, evolución y mantenimiento de aplicaciones de escritorio utilizando Progress OpenEdge. Me especializo en diseñar soluciones completas para necesidades funcionales específicas, integrando lógica de negocio, reportes personalizados y soporte a usuarios.",
+            "tasks_one":"<li>Analizo, diseño e implemento soluciones completas para nuevos programas y funcionalidades en sistemas existentes.</li> <li>Participo activamente en procesos de prueba y corrección, garantizando la integración exitosa de módulos en el sistema.</li> <li>Redacto manuales de usuario claros y accesibles, facilitando la adopción de las aplicaciones por parte de usuarios finales.</li><li>Diseño y genero reportes personalizados según requerimientos, optimizando la toma de decisiones con información oportuna.</li>",
+            "title_two":"Desarrollo Full-Stack con Angular y Progress OpenEdge",
+            "duration_two": "2023 – Actualidad",
+            "description_two": "Desde 2023 formo parte de un equipo que desarrolla una plataforma web integral para gestión de seguros. Participo activamente en el diseño UX, desarrollo frontend con Angular 17 y la integración con servicios backend, aportando soluciones modulares, seguras y escalables.",
+            "tasks_two":"<li>Asisto a reuniones de diseño y UX para definir flujos de trabajo, especificaciones y experiencias de usuario.</li><li>Desarrollo con Angular 17, aplicando buenas prácticas de modularización y estructuración de código.</li><li>Implemento rutas protegidas, lazy loading y organización modular.</li><li>Creo y consumo servicios con Angular Services y Observables.</li><li>Diseño flujos de login, guards personalizados y manejo de permisos.</li><li>Diseño UI y componentes con Angular Material y Bootstrap.</li><li>Integro librerías externas (ej. FontAwesome) y administro recursos estáticos.</li><li>Implemento formularios complejos con Reactive Forms y validaciones.</li><li>Gestiono versiones con Git y colaboro mediante pull requests.</li>"        
+        }
+    },
+    "projects":"",
+    "about":"",
+    "footer":{
+        "name": "Matias Micchele",
+        "description": "Este sitio fue diseñado y desarrollado por mí. Todos los derechos reservados.",
+        "contact": {
+            "email": "matias.micchele@hotmail.com",
+            "phone": "+54 9 3402 673260",
+            "location": "Arroyo Seco, Santa Fe, Argentina",
+            "flag-arg": ""
+        },        
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/matias-micchele/",
+            "github": "https://github.com/matiasmicchele09"
+        }
+    }
+}

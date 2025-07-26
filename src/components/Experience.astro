@@ -1,0 +1,59 @@
+---
+const { es } = Astro.props
+const experience = es.experience;
+const job = experience.job;
+---
+<section class="mx-auto px-6 py-12 bg-gradient-to-t from-primary via-text-main to-text-main">
+  <h2 class="text-primary text-4xl font-bold text-center mb-10 font-poppins">{experience.title}</h2>
+  <!-- BLOQUE 2 -->
+  <div class="relative bg-text-main shadow-lg rounded-2xl p-6 mb-10 border-l-8 border-primary">
+    <div class="flex items-center gap-2 mb-2">
+      <!-- Ícono -->
+      <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M9 12h6m2 9H7a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 011-1h4a1 1 0 011 1v1h2a2 2 0 012 2v12a2 2 0 01-2 2z" />
+      </svg>
+      <h3 class="text-xl font-bold text-primary font-poppins">
+        {job.title_two}
+      </h3>
+    </div>
+    <p class="text-sm text-main font-inter mb-4">{job.duration_two}</p>
+
+    <!-- Narrativa -->
+    <p class="italic text-main font-inter mb-4">
+      {job.description_two}
+    </p>
+    
+    <!-- Tareas -->
+    <ul class="list-disc list-inside text-main font-inter space-y-1">
+      <span set:html={job.tasks_two}></span>
+    </ul>
+  </div>
+
+  <!-- BLOQUE 1 -->
+  <div class="relative bg-text-main shadow-lg rounded-2xl p-6 border-l-8 border-primary">
+    <div class="flex items-center gap-2 mb-2">
+      <!-- Ícono -->
+      <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M9 12h6m2 9H7a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 011-1h4a1 1 0 011 1v1h2a2 2 0 012 2v12a2 2 0 01-2 2z" />
+      </svg>
+      <h3 class="text-xl font-bold text-primary font-poppins">
+        {job.title_one}
+      </h3>
+    </div>
+    <p class="text-sm font-inter text-main mb-4">{job.duration_one}</p>
+
+    <!-- Narrativa -->
+    <p class="italic text-main font-inter mb-4">
+      {job.description_one}
+    </p>
+
+    <!-- Tareas -->
+    <ul class="list-disc list-inside text-main font-inter space-y-1">
+      <span set:html={job.tasks_one}></span>
+    </ul>
+  </div>
+</section>

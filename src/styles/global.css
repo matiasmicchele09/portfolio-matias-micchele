@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colores  
+    background-color: #0d1117; 🌑Azul oscuro profundo Fondo Principal (body / secciones)
+    background-color: #1b2430;  Gris-azulado para diferenciar bloques 🔵 Fondo Secundario / Secciones alternas
+    color: #a855f7;  Púrpura vivo 🟣 Color Primario (botones, íconos, enlaces)
+    color: #3b82f6;   Azul vibrante 🟦 Color Secundario (resaltes, bordes, detalles)
+    color: #e5e7eb;   Gris claro legible sobre fondo oscuro ⚪ Texto Principal
+    color: #9ca3af;   Gris medio 🧊 Texto Secundario / menos énfasis
+    color: #d946ef;   Magenta suave 
+    background-color: #272e3f;   Bloques sutiles sobre fondo oscuro   
+*/
+
+/* .navbar-section{
+    background-color: #1b2430;
+    color: #a855f7;
+}
+.navbar-section a:hover{
+    color: #d946ef;
+}
+
+.home-section{
+    background-color: #0d1117;   🌑Azul oscuro profundo Fondo Principal (body / secciones)
+    color: #e5e7eb;     
+}
+
+.text-color{
+    color: #a855f7;  Azul oscuro profundo 
+}
+
+.btn-section{
+    background-color: #a855f7;    
+    color: #e5e7eb;
+}
+.btn-section:hover{
+        background-color: #d946ef;    
+}
+
+.experience_section {
+    background: linear-gradient(to right, #e5e7eb 0%, #ffffff 85%, #a855f7 100%);
+}
+
+.experience_section h2 {
+    font-family: 'inter';
+} */
