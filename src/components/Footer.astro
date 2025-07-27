@@ -4,19 +4,19 @@ const footer = es.footer;
 const currentYear = new Date().getFullYear();
 ---
 <footer class="bg-secondary-bg py-12 px-6 mt-20">
-  <div class="max-w-5xl mx-auto flex flex-row justify-between items-center">
-    <p class="text-xs font-bold text-primary font-poppins">&copy; {currentYear} - {footer.name} | {footer.description}</p>
-    <div class="flex items-center gap-4">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+    <p class="text-xs font-bold text-primary font-poppins text-center md:text-left">
+      &copy; {currentYear} - {footer.name} | {footer.description}
+    </p>
+    <div class="flex flex-col items-center gap-4">
       <a href={`${footer.contact.email}`} class="text-xs font-bold text-primary font-poppins hover:text-magenta">{footer.contact.email}</a>
       <a href={`${footer.social.linkedin}`} target="_blank" class="hover:text-magenta">
         <svg class="w-5 h-5 fill-current" ...>...</svg>
       </a>
       <a href={`${footer.contact.phone}`} class="text-xs font-bold text-primary font-poppins hover:text-magenta">{footer.contact.phone}</a>
       <a href={`${footer.contact.location}`} class="text-xs font-bold text-primary font-poppins hover:text-magenta">
-        <img src="/public/svg/es.svg" alt="Español" class="w-6 h-6" />
         {footer.contact.location}
       </a>
-
       <a href="https://github.com/tuusuario" target="_blank" class="hover:text-purple-400">
         <svg class="w-5 h-5 fill-current" ...>...</svg>
       </a>

@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* html, body {
+    overflow-x: hidden;
+  } */
 /* Colores  
     background-color: #0d1117; 🌑Azul oscuro profundo Fondo Principal (body / secciones)
     background-color: #1b2430;  Gris-azulado para diferenciar bloques 🔵 Fondo Secundario / Secciones alternas
