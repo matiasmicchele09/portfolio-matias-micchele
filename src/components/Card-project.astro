@@ -1,0 +1,93 @@
+---
+interface Props {
+    project: {
+        client: string;
+        name: string;
+        img:string,
+        description: string;
+        duration: string;
+        keypoints: string;
+        technologies: Record<string, string>;
+        link: string;
+        };
+    
+    title: string;
+  id: string;
+}
+const { project, title, id } = Astro.props;
+
+---
+<div
+  id={id}
+  class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 transition-opacity duration-300"
+  onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}
+> 
+    <div class="flex flex-col items-center min-h-screen max-w-[48rem] mx-auto bg-text-main rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform border overflow-hidden group"
+    onclick="event.stopPropagation()">        
+        <!-- Contenido -->
+        <div class="p-6">
+            <div class="mb-4">
+            <h3 class="text-xl font-poppins mb-1">{project.name}</h3>
+            <p class="text-primary text-md font-inter font-bold">{project.client}</p>
+            <span class="bg-magenta text-main font-inter px-3 py-1 rounded-full text-xs">
+                {project.duration}
+            </span>
+            </div>
+            <!-- Descripción -->
+            {project.description && (
+            <i class="text-main text-sm mb-4 text-inter">
+                {project.description}
+            </i>
+            )}
+
+            <!-- Puntos clave -->
+            <div class="mb-6">
+            <h4 class="text-sm font-semibold text-gray-800 mb-3 flex items-center">        
+                
+            </h4>
+            
+            <span class="text-xs text-main font-inter space-y-2" set:html={project.keypoints}></span>
+            </div>
+
+            <!-- Tecnologías -->
+            <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-800 mb-3 flex items-center">        
+                Tecnologías Utilizadas
+            </h4>
+            <div class="flex flex-wrap gap-2">
+                {Object.entries(project.technologies).map(([key, icon]) => (
+                <div class="flex items-center bg-gray-50 px-3 py-1 rounded-full text-xs font-medium text-gray-700 hover:bg-purple-50 transition-colors">
+                    <img src={icon} alt={key} class="w-4 h-4 mr-2" />
+                    {key.charAt(0).toUpperCase() + key.slice(1)}
+                </div>
+                ))}
+            </div>
+            </div>
+
+            <!-- Botón de enlace -->
+            {project.link && (
+            <div class="pt-4 border-t border-gray-100">
+                <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-105"
+                >
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                </svg>
+                Ver Proyecto
+                </a>
+            </div>
+            )}
+
+            <button            
+            class="absolute top-4 right-4 w-8 h-8 rounded-full bg-text-main hover:bg-magenta transition"
+            aria-label="Cerrar modal"
+            onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}
+            > ✕</button>
+        </div>
+    </div>
+    
+</div>

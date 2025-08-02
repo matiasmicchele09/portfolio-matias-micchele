@@ -1,19 +1,115 @@
-<section id="projects" class="py-24 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-purple-600 text-center mb-12">Proyectos Propios</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-purple-300/20 transition" data-aos="zoom-in">
-          <h3 class="text-xl font-semibold mb-2">Gestión de Pólizas</h3>
-          <p class="text-gray-700 text-sm">Aplicación para administrar pólizas y asegurados. Hecha con Angular y servicios REST en OpenEdge.</p>
+---
+import CardProject from './Card-project.astro';
+
+interface Props {
+  es: {
+    projects: {
+      title: string;
+      project: Array<{
+        client: string;
+        name: string;
+        img:string,
+        description: string;
+        duration: string;
+        keypoints: string;
+        technologies: Record<string, string>;
+        link: string;
+      }>;
+    };
+  };
+}
+
+const { es } = Astro.props;
+const { projects } = es;
+---
+
+<div class="project-shape-top">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill">
+        <h2 class="text-3xl font-bold text-purple-600 text-center mb-4">{projects.title}</h2>
+      </path>
+  </svg>
+</div>
+
+<section id="projects" class="py-16 px-6 bg-gray-50">
+  <div class="max-w-7xl mx-auto" data-aos="fade-up">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.project.map((project, index) => (
+        <div data-aos="zoom-in" data-aos-delay={index * 100}>
+          <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden group">
+             {/* Header con gradiente  */}
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+              <img src={project.img} alt="Avatar de Matías" class="w-full h-full  object-contain " />
+            </div>
+            
+             {/* Contenido  */}
+            <div class="p-6">
+              <div class="mb-4">              
+                <h3 class="text-xl font-poppins mb-1">{project.name}</h3>
+                <p class="text-primary text-md font-inter font-bold">{project.client}</p>
+                <span class="bg-magenta text-main font-inter px-3 py-1 rounded-full text-xs">
+                  {project.duration}
+                </span>
+              </div>
+               {/* Descripción  */}
+               {project.description && (
+                <i class="text-main text-sm mb-4 text-inter">
+                  {project.description}
+                </i>
+              )}
+
+               {/* Puntos clave  */}
+               <div class="mb-6">
+                <button class="bg-primary font-poppins text-main rounded-full py-2 px-4 hover:bg-magenta"
+                onclick={`document.getElementById('modal-project-${index}').classList.remove('hidden'); document.getElementById('modal-excellency-${index}').classList.add('flex');`}>Leer Más</button>
+                  {/* <!-- <ul class="text-xs text-gray-600 space-y-2" set:html={project.keypoints}></ul> --> */}
+                </div>
+                
+                {/* Tecnologías */}
+                <div class="mb-4">
+                  <h4 class="text-sm font-semibold text-gray-800 mb-3 flex items-center">        
+                    Tecnologías Utilizadas
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    {Object.entries(project.technologies).map(([key, icon]) => (
+                      <div class="flex items-center bg-gray-50 px-3 py-1 rounded-full text-xs font-medium text-gray-700 hover:bg-purple-50 transition-colors">
+                        <img src={icon} alt={key} class="w-4 h-4 mr-2" />
+                        {key.charAt(0).toUpperCase() + key.slice(1)}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Botón de enlace */}
+                {/* {project.link && (
+                  <div class="pt-4 border-t border-gray-100">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-105"
+                    >
+                      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                      </svg>
+                      Ver Proyecto
+                    </a>
+                  </div>
+                )} */}
+              </div>
+            </div>
+
         </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-purple-300/20 transition" data-aos="zoom-in" data-aos-delay="100">
-          <h3 class="text-xl font-semibold mb-2">Dashboard Clientes</h3>
-          <p class="text-gray-700 text-sm">Panel con filtros dinámicos y reportes interactivos. Angular + Chart.js.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-purple-300/20 transition" data-aos="zoom-in" data-aos-delay="200">
-          <h3 class="text-xl font-semibold mb-2">Sitio Contadora</h3>
-          <p class="text-gray-700 text-sm">Landing page elegante y responsive usando TailwindCSS para una profesional independiente.</p>
-        </div>
-      </div>
+      ))}
     </div>
-  </section>
+  </div>
+</section>
+{projects.project.map((project: any, index: number) => (
+  <CardProject 
+    id={`modal-project-${index}`}
+    project={project}
+    title={projects.title}
+  ></CardProject>
+))}
+<!-- <CardProject project={project} /> -->

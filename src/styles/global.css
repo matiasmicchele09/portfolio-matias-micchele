@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.project-shape-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.project-shape-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 108px;
+}
+
+.project-shape-top .shape-fill {
+    fill: #a855f7;
+}
+
 /* html, body {
     overflow-x: hidden;
   } */
