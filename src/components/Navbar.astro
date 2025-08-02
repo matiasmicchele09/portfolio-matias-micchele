@@ -100,5 +100,14 @@ const navbar = es.navbar;
     document.addEventListener('click', () => {
       langDropdown.classList.add('hidden');
     });
+
+    // Cerrar menú al hacer click en un enlace (solo mobile)
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 640) { // sm breakpoint
+            menu.classList.add('hidden');
+          }
+        });
+      });
   });
 </script>
