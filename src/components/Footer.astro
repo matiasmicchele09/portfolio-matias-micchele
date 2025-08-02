@@ -3,7 +3,7 @@ const { es } = Astro.props;
 const footer = es.footer;
 const currentYear = new Date().getFullYear();
 ---
-<footer class="bg-secondary-bg py-12 px-4 mt-20">
+<footer class="bg-secondary-bg py-12 px-4">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
     <p class="text-xs md:text-md font-bold text-primary font-poppins text-center md:text-left">
       &copy; {currentYear} - {footer.name} | {footer.description}

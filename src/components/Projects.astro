@@ -1,30 +1,11 @@
 ---
 import CardProject from './Card-project.astro';
-
-interface Props {
-  es: {
-    projects: {
-      title: string;
-      project: Array<{
-        client: string;
-        name: string;
-        img:string,
-        alt: string;
-        description: string;
-        duration: string;
-        keypoints: string;
-        technologies: Record<string, string>;
-        link: string;
-        textLink: string;
-        repository: string;
-        textRepository: string;
-      }>;
-    };
-  };
-}
-
 const { es } = Astro.props;
 const { projects } = es;
+
+interface Props {
+  es: typeof import('../languages/es.json');
+}
 ---
 
 <div class="project-shape-top">
@@ -63,21 +44,20 @@ const { projects } = es;
               )}
 
                {/* Puntos clave  */}
-               <div class="mb-6">
+               <div class="my-4">
                 <button class="bg-primary font-poppins text-main rounded-full py-2 px-4 hover:bg-magenta"
-                onclick={`document.getElementById('modal-project-${index}').classList.remove('hidden'); document.getElementById('modal-excellency-${index}').classList.add('flex');`}>Leer Más</button>
-                  {/* <!-- <ul class="text-xs text-gray-600 space-y-2" set:html={project.keypoints}></ul> --> */}
+                        onclick={`document.getElementById('modal-project-${index}').classList.remove('hidden'); document.getElementById('modal-excellency-${index}').classList.add('flex');`}>{projects.textButton}</button>                  
                 </div>
                 
                 {/* Tecnologías */}
                 <div class="mb-4">
-                  <h4 class="text-sm font-semibold text-gray-800 mb-3 flex items-center">        
-                    Tecnologías Utilizadas
+                  <h4 class="text-main-bg text-md font-inter font-bold flex items-center mb-2">        
+                    {projects.technologiesText}
                   </h4>
                   <div class="flex flex-wrap gap-2">
                     {Object.entries(project.technologies).map(([key, icon]) => (
                       <div class="flex items-center bg-gray-50 px-3 py-1 rounded-full text-xs font-medium text-gray-700 hover:bg-purple-50 transition-colors">
-                        <img src={icon} alt={key} class="w-4 h-4 mr-2" />
+                        <img src={icon} alt={key} class="w-6 h-6 mr-2" />
                         {key.charAt(0).toUpperCase() + key.slice(1)}
                       </div>
                     ))}
@@ -86,35 +66,35 @@ const { projects } = es;
 
                 {/* Botón de enlace */}
                 <div class="flex gap-4 pt-4">
-  {project.link && (
-    <a 
-      href={project.link} 
-      target="_blank" 
-      rel="noopener noreferrer"
-      class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-105"
-    >
-      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
-        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-      </svg>
-      {project.textLink}
-    </a>
-  )}
-  {project.repository && (
-    <a 
-      href={project.repository} 
-      target="_blank" 
-      rel="noopener noreferrer"
-      class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-105"
-    >
-      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
-        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-      </svg>
-      {project.textRepository}
-    </a>
-  )}
-</div>
+                  {project.link && (
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-105"
+                    >
+                      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                      </svg>
+                      {project.textLink}
+                    </a>
+                  )}
+                  {project.repository && (
+                    <a 
+                      href={project.repository} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-105"
+                    >
+                      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                      </svg>
+                      {project.textRepository}
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -127,7 +107,7 @@ const { projects } = es;
   <CardProject 
     id={`modal-project-${index}`}
     project={project}
-    title={projects.title}
+    technologiesText ={projects.technologiesText}
   ></CardProject>
 ))}
 <!-- <CardProject project={project} /> -->

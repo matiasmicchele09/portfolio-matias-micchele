@@ -1,15 +1,10 @@
+---
+const { es } = Astro.props;
+const { about } = es;
+---
 <section id="about" class="py-24 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto" data-aos="fade-right">
-      <h2 class="text-3xl font-bold text-purple-600 mb-6">Sobre mí</h2>
-      <p class="text-gray-700 leading-relaxed">Hola, soy Matias Micchele, graduado en <b>Ingeniería en Sistemas de Información</b>, en la <b>Universidad Tecnológica Nacional - Facultad Regional Rosario</b>. <br>
-        Actualmente, me encuentro trabajando en relación de dependencia donde realizo desarrollos web y de escritorio. Utilizo tecnologías de desarrollo web como <b>Angular</b>, <b>HTML y CSS</b>, <b>Angular Material</b>, así como también tecnologías de backend como <b>Progress OpenEdge</b>. <br>
-        Para el desarrollo de aplicaciones de escritorio, utilizo Progress OpenEdge ABL, que me permite crear aplicaciones robustas y eficientes. 
-        <br>
-        Para la gestión de proyectos utilizo herramientas como <b>Jira y Confluence</b>, y para el control de versiones <b>Git y Gitlab</b>.
-        <br><br>
-        Además, me apasiona el desarrollo de software y disfruto creando mis propios proyectos. En ellos utilizo tecnologías como <b>Angular</b>, <b>TailwindCSS</b>, <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> para frontend, y <b>NodeJS + Express</b> para backend, junto con bases de datos como <b>PostgreSQL</b>. También he implementado <b>ORM</b> como <b>Sequelize</b>.
-        He creado <b>API's RESTful</b> y aplicaciones web responsivas que se adaptan a diferentes dispositivos. 
-        <br><br>         
-        Me considero una persona proactiva, con ganas de aprender y crecer profesionalmente. Me gusta trabajar en equipo y colaborar en proyectos desafiantes que me permitan aplicar mis conocimientos y habilidades técnicas. <br></p>
+      <h2 class="text-3xl font-bold text-purple-600 mb-6">{about.title}</h2>
+      <span class="text-gray-700 text-lg leading-relaxed font-inter" set:html={es.about.description}></span>        
     </div>
   </section>
