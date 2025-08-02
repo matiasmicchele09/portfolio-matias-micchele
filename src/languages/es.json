@@ -42,24 +42,28 @@
         "title":"Proyectos Propios",
         "project":[
             {
-                "client": "Estudio Contable De Paolo",
-                "name": "SGC-API",
-                "img":"",
-                "description": "API RESTful completa para gestión de clientes y usuarios con autenticación JWT, base de datos PostgreSQL y documentación automática.",
-                "duration":"Abril 2025 - Actualidad",
-                "keypoints":"<li>Diseño e implemento una API RESTful en Node.js y Express.js para la gestión de clientes, usuarios (con roles y permisos), bancos, provincias y otras entidades clave.</li><li>Modelo y gestiono la base de datos en PostgreSQL utilizando Sequelize ORM, definiendo relaciones complejas y migraciones automáticas.</li><li>Aseguro la autenticación y autorización con JWT y bcrypt, desarrollando middleware personalizado para validación de tokens y gestión segura de cookies.</li><li>Documento automáticamente la API con Swagger.</li><li>Aplico arquitectura MVC y patrón middleware, modularizando rutas, controladores y modelos para maximizar la escalabilidad y la mantenibilidad del código.</li><li>Configuro entornos de ejecución (dev, prod, test) mediante dotenv y scripts npm, garantizando consistencia en variables de entorno y flujos de despliegue.</li><li>Implemento buenas prácticas de código limpio, seguridad (cifrado de contraseñas y validación de tokens) y documentación, asegurando un sistema robusto y fácilmente extensible.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
+                "client": "Blue Planet",
+                "name": "Sitio Web (One Page)",
+                "img":"/images/blue-planet.webp",
+                "alt":"Sitio Web Blue Planet",
+                "description": "Trabajo en un sitio web con Astro, enfocado en mostrar la propuesta de valor, servicios, equipo y visión de una empresa de Francia del sector geoespacial. El sitio está diseñado para ser visualmente atractivo, interactivo y accesible desde cualquier dispositivo.",
+                "duration":"Junio 2025 - Julio 2025",
+                "keypoints":"<li>Participo de reuniones, en inglés, con el cliente donde se define el UI de las secciones que integran la web, como asi el tipo de información que debe ir en cada una.</li><li>Desarrollo el sitio web (one page) corporativo con Astro y JavaScript, aplicando una arquitectura de componentes modular para un sitio estático de alto rendimiento.</li><li>Implemento estilos con Tailwind CSS.</li><li>Incorporo micro-interacciones y animaciones avanzadas (efecto máquina de escribir, transiciones suaves, Animation On Scroll (AOS)) para enriquecer la UX.</li><li>Optimizo la performance usando lazy loading, formatos de imagen WebP y una estructura de carpetas clara y documentada.</li><li>Potencio el SEO mediante una estructura semántica, metadatos adecuados y configuración de rutas estáticas.</li><li>Gestiono dependencias con npm y mantengo el repositorio en GitHub ordenado, con versionado y documentación de configuración y scripts.</li>",
                 "technologies":{
-                    "postgreSQL":"/svg/PostgreSQL.svg",
-                    "nodeJS":"/svg/NodeJS.svg",
-                    "expressJS":"/svg/ExpressJS.svg",
-                    "swagger": "/svg/Swagger.svg",
-                    "sequelize":"/svg/Sequelize.svg"               
+                    "astro":"/svg/Astro.svg",
+                    "tailwindCSS":"/svg/TailwindCSS.svg",
+                    "javascript":"/svg/Javascript.svg"
                 },
-                "link":""
+                "link":"https://www.blueplanet-sat.com/",
+                "textLink":"Ver Proyecto",
+                "repository":"https://github.com/blueplanet-sat/bplanet-template",
+                "textRepository":"Ver Código"
             },
-            {
+             {
                 "client": "Estudio Contable De Paolo",
                 "name": "SGC-App",
+                "img":"/images/frontend-app.webp",
+                "alt":"App Estudio Contable De Paolo",
                 "description": "Diseño y desarrollo un CRM web moderno en Angular 16 con TypeScript, empleando arquitectura modular y lazy loading para optimizar el rendimiento.",
                 "duration":"Abril 2025 - Actualidad",
                 "keypoints":"<li>Implemento un CRUD completo para clientes, provincias, bancos y condiciones fiscales, garantizando la integridad y consistencia de los datos.</li><li>Construyo un dashboard interactivo con Chart.js para mostrar KPI y métricas en tiempo real, facilitando el análisis de datos.</li><li>Aseguro la protección de rutas y sesiones mediante un sistema de autenticación robusto con guards, interceptors HTTP y validación de sesiones.</li><li>Aplico programación reactiva con RxJS (BehaviorSubject) para la gestión de estado y el manejo eficiente de flujos de datos asincrónicos.</li><li>Desarrollo una interfaz responsive usando Bootstrap 5 y SweetAlert2 para notificaciones personalizadas, ofreciendo una experiencia de usuario fluida en distintos dispositivos.</li><li>Centralizo el manejo de errores y logging con interceptors HTTP, mejorando la trazabilidad y el debugging.</li><li>Escribo pruebas unitarias e integrales con Jasmine y Karma, reforzando la calidad y estabilidad del sistema.</li><li>Adopto buenas prácticas de código limpio, separación de responsabilidades y documentación, facilitando la escalabilidad y mantenibilidad del proyecto.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
@@ -70,23 +74,32 @@
                     "css":"/svg/CSS.svg",
                     "bootstrap":"/svg/Bootstrap.svg"
                 },
-                "link":""
+                "link":"",
+                "textLink":"Ver Proyecto",
+                "repository":"https://github.com/matiasmicchele09/SGC-App",
+                "textRepository":"Ver Código"
+           
             },
             {
-                "client": "Blue Planet",
-                "name": "Sitio Web (One Page)",
-                "img":"/images/blue-planet.png",
-                "description": "Trabajo en un sitio web con Astro, enfocado en mostrar la propuesta de valor, servicios, equipo y visión de una empresa de Francia del sector geoespacial. El sitio está diseñado para ser visualmente atractivo, interactivo y accesible desde cualquier dispositivo.",
-                "duration":"Junio 2025 - Julio 2025",
-                "keypoints":"<li>Participo de reuniones, en inglés, con el cliente donde se define el UI de las secciones que integran la web, como asi el tipo de información que debe ir en cada una.</li><li>Desarrollo el sitio web (one page) corporativo con Astro y JavaScript, aplicando una arquitectura de componentes modular para un sitio estático de alto rendimiento.</li><li>Implemento estilos con Tailwind CSS.</li><li>Incorporo micro-interacciones y animaciones avanzadas (efecto máquina de escribir, transiciones suaves, Animation On Scroll (AOS)) para enriquecer la UX.</li><li>Optimizo la performance usando lazy loading, formatos de imagen WebP y una estructura de carpetas clara y documentada.</li><li>Potencio el SEO mediante una estructura semántica, metadatos adecuados y configuración de rutas estáticas.</li><li>Gestiono dependencias con npm y mantengo el repositorio en GitHub ordenado, con versionado y documentación de configuración y scripts.</li>",
+                "client": "Estudio Contable De Paolo",
+                "name": "SGC-API",
+                "img":"/images/img-backend.webp",
+                "alt":"API Estudio Contable De Paolo",
+                "description": "API RESTful completa para gestión de clientes y usuarios con autenticación JWT, base de datos PostgreSQL y documentación automática.",
+                "duration":"Abril 2025 - Actualidad",
+                "keypoints":"<li>Diseño e implemento una API RESTful en Node.js y Express.js para la gestión de clientes, usuarios (con roles y permisos), bancos, provincias y otras entidades clave.</li><li>Modelo y gestiono la base de datos en PostgreSQL utilizando Sequelize ORM, definiendo relaciones complejas y migraciones automáticas.</li><li>Aseguro la autenticación y autorización con JWT y bcrypt, desarrollando middleware personalizado para validación de tokens y gestión segura de cookies.</li><li>Documento automáticamente la API con Swagger.</li><li>Aplico arquitectura MVC y patrón middleware, modularizando rutas, controladores y modelos para maximizar la escalabilidad y la mantenibilidad del código.</li><li>Configuro entornos de ejecución (dev, prod, test) mediante dotenv y scripts npm, garantizando consistencia en variables de entorno y flujos de despliegue.</li><li>Implemento buenas prácticas de código limpio, seguridad (cifrado de contraseñas y validación de tokens) y documentación, asegurando un sistema robusto y fácilmente extensible.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
                 "technologies":{
-                    "astro":"/svg/Astro.svg",
-                    "tailwindCSS":"/svg/TailwindCSS.svg",
-                    "javascript":"/svg/Javascript.svg"
+                    "postgreSQL":"/svg/PostgreSQL.svg",
+                    "nodeJS":"/svg/NodeJS.svg",
+                    "expressJS":"/svg/ExpressJS.svg",
+                    "swagger": "/svg/Swagger.svg",
+                    "sequelize":"/svg/Sequelize.svg"               
                 },
-                "link":"https://www.blueplanet-sat.com/",
-                "repository":"https://github.com/blueplanet-sat/bplanet-template"
-            }
+                "link":"",
+                "textLink":"Ver Proyecto",
+                "repository":"https://github.com/matiasmicchele09/APIRest---SGC",
+                "textRepository":"Ver Código"
+            }                     
         ],
         "textButton":"Leer Más",
         "technologiesText":"Tecnologías Utilizadas"
