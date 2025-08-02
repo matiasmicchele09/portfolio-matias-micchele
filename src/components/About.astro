@@ -2,7 +2,7 @@
 const { es } = Astro.props;
 const { about } = es;
 ---
-<section id="about" class="py-24 px-6 bg-gray-50">
+<section id={es.about.id} class="py-24 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto" data-aos="fade-right">
       <h2 class="text-3xl font-bold text-purple-600 mb-6">{about.title}</h2>
       <span class="text-gray-700 text-lg leading-relaxed font-inter" set:html={es.about.description}></span>        

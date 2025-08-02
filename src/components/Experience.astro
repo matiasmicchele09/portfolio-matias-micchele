@@ -3,7 +3,7 @@ const { es } = Astro.props
 const experience = es.experience;
 const job = experience.job;
 ---
-<section class="mx-auto px-6 py-12 bg-gradient-to-t from-primary via-text-main to-text-main">
+<section id={es.experience.id} class="mx-auto px-6 py-12 bg-gradient-to-t from-primary via-text-main to-text-main">
   <h2 class="text-primary text-4xl font-bold text-center mb-10 font-poppins">{experience.title}</h2>
   <!-- BLOQUE 2 -->
   <div class="relative bg-text-main shadow-lg rounded-2xl p-6 mb-10 border-l-8 border-primary">

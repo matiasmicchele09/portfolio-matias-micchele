@@ -5,21 +5,23 @@
     "navbar":[
         {
             "name":"Principal",
-            "path":""            
+            "path":"#principal"            
         },
         {
             "name":"Experiencia",
-            "path":""            
+            "path":"#experiencia"            
         },
         {
             "name":"Proyectos",
-            "path":""            
-        },{
+            "path":"#proyectos"            
+        },
+        {
             "name":"Sobre Mí",
-            "path":""            
+            "path":"#sobre-mi"            
         }        
     ],
     "hero":{
+        "id": "principal",
         "message": "¡Hola! Soy <span class='text-primary'>Matías</span>, desarrollador Fullstack",
         "description": "Desarrollador Fullstack con más de 4 años creando soluciones web y de escritorio para negocios reales. He trabajado en proyectos del sector asegurador y contable, desarrollando plataformas a medida con Angular, Node.js, PostgreSQL y Progress OpenEdge. Mi enfoque es crear aplicaciones seguras, escalables y alineadas con los procesos de cada cliente.",
         "technologies": {
@@ -41,6 +43,7 @@
         "btn_cv": "Descargar CV"
     },
     "experience":{
+        "id": "experiencia",
         "title": "Experiencia Laboral",
         "job":{
             "title_one":"Desarrollo de Aplicaciones de Escritorio (Progress OpenEdge)",
@@ -54,6 +57,7 @@
         }
     },
     "projects":{
+        "id": "proyectos",
         "title":"Proyectos Propios",
         "project":[
             {
@@ -120,6 +124,7 @@
         "technologiesText":"Tecnologías Utilizadas"
     },
     "about":{
+        "id": "sobre-mi",
         "title": "Sobre Mí",
         "description": "Hola, soy Matías Micchele, Ingeniero en Sistemas de Información graduado en la Universidad Tecnológica Nacional – Facultad Regional Rosario, Argentina. </br></br>Desde 2020 trabajo en el desarrollo de aplicaciones de escritorio utilizando Progress OpenEdge, creando soluciones robustas para el sector asegurador. A partir de 2023, comencé a especializarme también en el desarrollo frontend con Angular, sumando tecnologías como HTML, CSS, Angular Material y TailwindCSS para construir interfaces web modernas y responsivas. </br></br>Además de mi trabajo en relación de dependencia, disfruto aprender nuevas tecnologías y crear mis propios proyectos personales, siempre enfocados en la mejora continua y la experiencia del usuario. En ellos exploro el stack completo, utilizando Node.js, Express y PostgreSQL en el backend, y aplicando buenas prácticas como la implementación de APIs RESTful, el uso de ORM como Sequelize y el diseño adaptable a distintos dispositivos. </br></br>Colaboro activamente en equipos usando herramientas como Git, GitLab, Jira y Confluence, participando tanto en el análisis como en el desarrollo e implementación de soluciones. </br></br>Me considero una persona proactiva, curiosa y orientada a la calidad. Disfruto enfrentar desafíos que me permitan seguir creciendo como profesional y aportar valor real a los proyectos en los que participo."
        

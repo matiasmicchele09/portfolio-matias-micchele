@@ -2,13 +2,14 @@
 const { es } = Astro.props
 const navbar = es.navbar;
 ---
-  <header class="bg-secondary-bg flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm">
+  <header class="fixed top-0 left-0 w-full z-50 bg-secondary-bg flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm">
+    <!-- <div class="h-32"></div> -->
   <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
     <!-- Logo o Brand aquí si lo deseas -->
     <div class="flex items-center gap-x-2 py-6">
       <button
         type="button"
-        class="sm:hidden hs-collapse-toggle relative size-9 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
+        class="sm:hidden hs-collapse-toggle z-50 fixed relative size-9 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
         id="hs-navbar-alignment-collapse"
         aria-expanded="false"
         aria-controls="hs-navbar-alignment"
@@ -23,7 +24,8 @@ const navbar = es.navbar;
     </div>
     <div
       id="hs-navbar-alignment"
-      class="hs-collapse hidden overflow-visible transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
+      class="hs-collapse hidden overflow-visible transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2
+        fixed inset-0 bg-secondary-bg/80 backdrop-blur-md z-40 sm:static sm:bg-transparent sm:backdrop-blur-0 sm:z-auto"
       aria-labelledby="hs-navbar-alignment-collapse"
     >
       <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
@@ -49,7 +51,7 @@ const navbar = es.navbar;
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
-          <div id="lang-dropdown" class="absolute right-0 mt-2 w-32 bg-text-main border shadow-lg z-10 hidden">
+          <div id="lang-dropdown" class="absolute left-0 mt-2 w-32 bg-text-main border shadow-lg z-10 hidden">
             <button class="w-full flex items-center px-2 py-1 hover:bg-main-bg hover:text-text-main" data-flag="es" data-img="/public/svg/es.svg">
               <img src="/svg/es.svg" alt="Español" class="w-8 h-8" />
               <span class="ml-2 text-sm">Español</span>
