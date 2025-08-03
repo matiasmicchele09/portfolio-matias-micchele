@@ -1,0 +1,32 @@
+---
+import About from '../../components/About.astro';
+import Experience from '../../components/Experience.astro';
+import Footer from '../../components/Footer.astro';
+import Hero from '../../components/Hero.astro';
+import Navbar from '../../components/Navbar.astro';
+import Projects from '../../components/Projects.astro';
+import Layout from '../../layouts/Layout.astro';
+
+
+import { getTranslation } from '../../lib/i18n';
+
+// Usa Astro.request.url para obtener el parámetro lang correctamente
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+const { lang } = Astro.params;
+const t = getTranslation(lang || 'es');
+console.log("IDIOMA ACTUAL:", lang); // 🔍// console.log("t", t);
+---
+
+<Layout lang={lang} t={t}>
+  <Navbar data={t.navbar} lang={lang} />
+  <Hero hero={t.hero} />
+  <Experience experience={t.experience} />
+  <Projects projects={t.projects} />
+  <About about={t.about} />
+  <Footer footer={t.footer} />
+</Layout>

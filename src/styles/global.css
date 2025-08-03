@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Importa los estilos de AOS */
+/* filepath: src/styles/global.css */
+/* @import 'aos/dist/aos.css'; */
 .project-shape-top {
     position: relative;
     top: 0;

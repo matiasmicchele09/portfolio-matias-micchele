@@ -1,9 +1,11 @@
 ---
-const { es } = Astro.props
-const hero = es.hero;
+const { hero, lang } = Astro.props;
+// const hero = data.hero;
+
 ---
-<section id={es.hero.id} class="bg-main-bg min-h-screen flex items-center justify-center text-center py-8 overflow-x-hidden">
-  <div class="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-6 md:px-24" data-aos="fade-up">
+<section id={hero.id} class="bg-main-bg min-h-screen flex mt-20 items-center justify-center text-center py-8 overflow-x-hidden">
+  <div data-aos="fade-up"
+      data-aos-duration="2000" class="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-6 md:px-24" data-aos="fade-up">
   <!-- Avatar a la izquierda -->
     <div class="flex-shrink-0 order-2 md:order-1">
       <img src="/images/avatar-matias.png" alt="Avatar de Matías" class="w-full max-w-xs rounded-3xl shadow-lg object-cover mx-auto" />
@@ -12,7 +14,9 @@ const hero = es.hero;
     <div class="flex-1 max-w-lg md:max-w-[800px] order-1 md:order-2">
       <span class="text-text-main font-poppins text-xl md:text-5xl font-bold mb-6" set:html={hero.message} />
       <p class="text-text-main font-inter text-base md:text-xl mb-6">{hero.description}</p>
-      <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 rounded-full px-4 py-4 mb-6">
+      <!-- <a href="#projects" class="w-full md:w-auto font-inter inline-block bg-primary hover:bg-magenta text-text-main px-6 py-2 rounded-full text-lg font-semibold transition blink">{hero.btn_projects}</a> -->
+      <!-- <a href="#projects" class="w-full md:w-auto font-inter inline-block bg-primary hover:bg-magenta text-text-main px-6 py-2 rounded-full text-lg font-semibold transition blink mt-5 sx:mt-0 sx:ml-4 sm:mt-0 sm:ml-4">{hero.btn_cv}</a> -->
+      <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 rounded-full px-4 py-4 mb-6 mt-6">
         {Object.entries(hero.technologies).map(([key, icon]) => (
           <div class="flex items-center bg-text-main rounded-full px-2 py-2 text-xs font-medium text-gray-700 hover:bg-purple-50 transition-colors">
             <img
@@ -24,8 +28,6 @@ const hero = es.hero;
           </div>
         ))}
       </div>
-      <a href="#projects" class="w-full md:w-auto font-inter inline-block bg-primary hover:bg-magenta text-text-main px-6 py-2 rounded-full text-lg font-semibold transition blink">{hero.btn_projects}</a>
-      <a href="#projects" class="w-full md:w-auto font-inter inline-block bg-primary hover:bg-magenta text-text-main px-6 py-2 rounded-full text-lg font-semibold transition blink mt-5 sx:mt-0 sx:ml-4 sm:mt-0 sm:ml-4">{hero.btn_cv}</a>
     </div>
   </div>
 </section>

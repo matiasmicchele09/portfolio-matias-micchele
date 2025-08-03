@@ -1,10 +1,9 @@
 ---
 import CardProject from './Card-project.astro';
-const { es } = Astro.props;
-const { projects } = es;
+const { projects } = Astro.props;
 
 interface Props {
-  es: typeof import('../languages/es.json');
+  projects: typeof import('../locales/es.json').projects;
 }
 ---
 
