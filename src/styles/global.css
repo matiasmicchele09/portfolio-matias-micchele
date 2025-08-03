@@ -18,10 +18,32 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 108px;
+    background-color: #e5e7eb;
 }
 
 .project-shape-top .shape-fill {
     fill: #a855f7;
+}
+
+.about-shape-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.about-shape-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 118px;
+    background-color: #0d1117;
+}
+
+.about-shape-top .shape-fill {
+    fill: #e5e7eb;
 }
 
 /* html, body {

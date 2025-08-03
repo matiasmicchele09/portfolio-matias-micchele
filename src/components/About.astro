@@ -1,10 +1,15 @@
 ---
 const { about } = Astro.props;
-//const { about } = es;
 ---
-<section id={about.id} class="py-24 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto" data-aos="fade-right">
-      <h2 class="text-3xl font-bold text-purple-600 mb-6">{about.title}</h2>
-      <span class="text-gray-700 text-lg leading-relaxed font-inter" set:html={about.description}></span>        
-    </div>
-  </section>
+<div class="about-shape-top">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill">
+      </path>
+  </svg>
+</div>
+<section id={about.id} class="py-12 px-6 bg-main-bg">
+  <div class="max-w-5xl mx-auto" data-aos="fade-right">
+    <h2 class="text-3xl font-bold text-magenta mb-6">{about.title}</h2>
+    <span class="text-text-main text-lg leading-relaxed font-inter" set:html={about.description}></span>        
+  </div>
+</section>

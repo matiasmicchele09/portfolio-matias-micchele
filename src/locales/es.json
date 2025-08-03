@@ -18,7 +18,11 @@
         {
             "name":"Sobre Mí",
             "path":"#sobre-mi"            
-        }        
+        },        
+        {
+            "name":"Contacto",
+            "path":"#contacto"
+        }
     ],
     "hero":{
         "id": "principal",
@@ -126,21 +130,24 @@
     "about":{
         "id": "sobre-mi",
         "title": "Sobre Mí",
-        "description": "Hola, soy Matías Micchele, Ingeniero en Sistemas de Información graduado en la Universidad Tecnológica Nacional – Facultad Regional Rosario, Argentina. </br></br>Desde 2020 trabajo en el desarrollo de aplicaciones de escritorio utilizando Progress OpenEdge, creando soluciones robustas para el sector asegurador. A partir de 2023, comencé a especializarme también en el desarrollo frontend con Angular, sumando tecnologías como HTML, CSS, Angular Material y TailwindCSS para construir interfaces web modernas y responsivas. </br></br>Además de mi trabajo en relación de dependencia, disfruto aprender nuevas tecnologías y crear mis propios proyectos personales, siempre enfocados en la mejora continua y la experiencia del usuario. En ellos exploro el stack completo, utilizando Node.js, Express y PostgreSQL en el backend, y aplicando buenas prácticas como la implementación de APIs RESTful, el uso de ORM como Sequelize y el diseño adaptable a distintos dispositivos. </br></br>Colaboro activamente en equipos usando herramientas como Git, GitLab, Jira y Confluence, participando tanto en el análisis como en el desarrollo e implementación de soluciones. </br></br>Me considero una persona proactiva, curiosa y orientada a la calidad. Disfruto enfrentar desafíos que me permitan seguir creciendo como profesional y aportar valor real a los proyectos en los que participo."
+        "description": "Hola, soy Matías Micchele, Ingeniero en Sistemas de Información graduado en la <b class='text-magenta'>Universidad Tecnológica Nacional – Facultad Regional Rosario, Argentina</b>. </br></br>Desde 2020 trabajo en el desarrollo de aplicaciones de escritorio utilizando <b class='text-magenta'>Progress OpenEdge</b>, creando soluciones robustas para el sector asegurador. A partir de 2023, comencé a especializarme también en el desarrollo frontend con <b class='text-magenta'>Angular</b>, sumando tecnologías como <b class='text-magenta'>HTML</b>, <b class='text-magenta'>CSS</b>, <b class='text-magenta'>Angular Material</b> y <b class='text-magenta'>TailwindCSS</b> para construir interfaces web modernas y responsivas. </br></br>Además de mi trabajo en relación de dependencia, disfruto aprender nuevas tecnologías y crear mis propios proyectos personales, siempre enfocados en la <b class='text-magenta'>mejora continua y la experiencia del usuario</b>. En ellos exploro el stack completo, utilizando <b class='text-magenta'>Node.js</b>, <b class='text-magenta'>Express</b> y <b class='text-magenta'>PostgreSQL</b> en el backend, y aplicando buenas prácticas como la implementación de <b class='text-magenta'>APIs RESTful</b>, el uso de ORM como <b class='text-magenta'>Sequelize</b> y el diseño adaptable a distintos dispositivos. </br></br>Colaboro activamente en equipos usando herramientas como <b class='text-magenta'>Git</b>, <b class='text-magenta'>GitLab</b>, <b class='text-magenta'>Jira y Confluence</b>, participando tanto en el análisis como en el desarrollo e implementación de soluciones. </br></br>Me considero una persona <b class='text-magenta'>proactiva</b>, <b class='text-magenta'>curiosa</b> y <b class='text-magenta'>orientada a la calidad</b>. Disfruto enfrentar desafíos que me permitan seguir creciendo como profesional y aportar valor real a los proyectos en los que participo."        
        
+    },
+    "contact":{
+        "id": "contacto",
+        "title": "Contacto",
+        "description": "Si te interesa mi trabajo o quieres colaborar en algún proyecto, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y retos. Puedes enviarme un correo electrónico o un mensaje de WhatsApp. También puedes encontrarme en LinkedIn o GitHub.",
+        "email": "matias.micchele@hotmail.com",
+        "phone": "+54 9 3402 673260",
+        "github":"https://github.com/matiasmicchele09",
+        "linkedin": "https://www.linkedin.com/in/matias-micchele/"
     },
     "footer":{
         "name": "Matias Micchele",
         "description": "Este sitio fue diseñado y desarrollado por mí. Todos los derechos reservados.",
         "contact": {
-            "email": "matias.micchele@hotmail.com",
-            "phone": "+54 9 3402 673260",
             "location": "Arroyo Seco, Santa Fe, Argentina",
             "flag_arg": "/svg/ar.svg"
-        },        
-        "social": {
-            "linkedin": "https://www.linkedin.com/in/matias-micchele/",
-            "github": "https://github.com/matiasmicchele09"
         }
     }
 }

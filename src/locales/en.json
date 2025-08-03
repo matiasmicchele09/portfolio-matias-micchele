@@ -18,6 +18,10 @@
         {
             "name": "About Me",
             "path": "#sobre-mi"
+        },
+        {
+            "name": "Contact Me",
+            "path": "#contact-me"
         }
     ],
     "hero": {
@@ -125,20 +129,23 @@
     "about": {
         "id": "sobre-mi",
         "title": "About Me",
-        "description": "Hi, I'm Matías Micchele, Information Systems Engineer graduated from the National Technological University – Rosario Regional Faculty, Argentina. </br></br>Since 2020, I have been working on desktop application development using Progress OpenEdge, creating robust solutions for the insurance sector. Since 2023, I have also specialized in frontend development with Angular, adding technologies such as HTML, CSS, Angular Material, and TailwindCSS to build modern and responsive web interfaces. </br></br>In addition to my full-time job, I enjoy learning new technologies and creating my own personal projects, always focused on continuous improvement and user experience. In them, I explore the full stack, using Node.js, Express, and PostgreSQL on the backend, and applying best practices such as implementing RESTful APIs, using ORMs like Sequelize, and designing for different devices. </br></br>I actively collaborate in teams using tools like Git, GitLab, Jira, and Confluence, participating in analysis, development, and implementation of solutions. </br></br>I consider myself proactive, curious, and quality-oriented. I enjoy facing challenges that allow me to keep growing as a professional and add real value to the projects I participate in."
+        "description": "Hi, I'm Matías Micchele, a Systems Information Engineer graduated from the <b class='text-magenta'>National Technological University – Rosario Regional Faculty, Argentina</b>. </br></br>Since 2020, I have been working on desktop application development using <b class='text-magenta'>Progress OpenEdge</b>, creating robust solutions for the insurance sector. Starting in 2023, I also began specializing in frontend development with <b class='text-magenta'>Angular</b>, incorporating technologies such as <b class='text-magenta'>HTML</b>, <b class='text-magenta'>CSS</b>, <b class='text-magenta'>Angular Material</b>, and <b class='text-magenta'>TailwindCSS</b> to build modern, responsive web interfaces. </br></br>In addition to my full-time job, I enjoy learning new technologies and creating personal projects, always focused on <b class='text-magenta'>continuous improvement and user experience</b>. In these projects, I explore the full stack, using <b class='text-magenta'>Node.js</b>, <b class='text-magenta'>Express</b>, and <b class='text-magenta'>PostgreSQL</b> on the backend, and applying best practices such as implementing <b class='text-magenta'>RESTful APIs</b>, using ORMs like <b class='text-magenta'>Sequelize</b>, and designing for different devices. </br></br>I actively collaborate in teams using tools like <b class='text-magenta'>Git</b>, <b class='text-magenta'>GitLab</b>, <b class='text-magenta'>Jira</b> and <b class='text-magenta'>Confluence</b>, contributing to analysis as well as the development and implementation of solutions. </br></br>I consider myself a <b class='text-magenta'>proactive</b>, <b class='text-magenta'>curious</b>, and <b class='text-magenta'>quality-oriented</b> person. I enjoy taking on challenges that allow me to continue growing professionally and bringing real value to the projects I participate in."
+    },
+    "contact":{
+        "id": "contact-me",
+        "title": "Contact Me",
+        "description": "If you are interested in my work or want to collaborate on a project, feel free to contact me. I am always open to new opportunities and challenges. You can send me an email or send me a WhatsApp message. You can also find me on LinkedIn or GitHub."        ,
+        "email": "matias.micchele@hotmail.com",
+        "phone": "+54 9 3402 673260",
+        "github":"https://github.com/matiasmicchele09",
+        "linkedin": "https://www.linkedin.com/in/matias-micchele/"
     },
     "footer": {
         "name": "Matias Micchele",
         "description": "This site was designed and developed by me. All rights reserved.",
-        "contact": {
-            "email": "matias.micchele@hotmail.com",
-            "phone": "+54 9 3402 673260",
+        "contact": {            
             "location": "Arroyo Seco, Santa Fe, Argentina",
             "flag_arg": "/svg/ar.svg"
-        },
-        "social": {
-            "linkedin": "https://www.linkedin.com/in/matias-micchele/",
-            "github": "https://github.com/matiasmicchele09"
         }
     }
 }
