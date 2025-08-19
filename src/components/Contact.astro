@@ -4,18 +4,18 @@ const { contact } = Astro.props;
 <section id={contact.id} class="title-section bg-main-bg text-center py-8">
   <h2 class="title-section text-3xl font-bold text-magenta mb-6">{contact.title}</h2>
   <p class="p-4 text-lg text-text-main">{contact.description}</p>
-  <div class="flex flex-col md:flex-row justify-center gap-6 text-lg">
-    <a href={`mailto:${contact.email}`} class="flex items-center text-lg md:text-md font-bold text-primary font-poppins hover:text-magenta">
-        <img src="/svg/email.svg" alt="email" class="magenta mx-2 w-12 h-12" />
+  <div class="flex flex-col md:flex-row justify-center gap-2 text-lg">
+    <a href={`mailto:${contact.email}`} class="flex items-center text-lg md:text-sm font-bold text-primary font-poppins hover:text-magenta">
+        <img src="/svg/email.svg" alt="email" class="magenta mx-2 w-10 h-10" />
         {contact.email}
     </a>    
-    <a href={`https://api.whatsapp.com/send?phone=${contact.phone.replace(/\+|\s+/g, "")}`} target="_blank" class="flex items-center text-lg md:text-md font-bold text-primary font-poppins hover:text-magenta">
-        <img src="/svg/whatsapp.svg" alt="whatsapp" class="magenta mx-2 w-12 h-12" />
+    <a href={`https://api.whatsapp.com/send?phone=${contact.phone.replace(/\+|\s+/g, "")}`} target="_blank" class="flex items-center text-lg md:text-sm font-bold text-primary font-poppins hover:text-magenta">
+        <img src="/svg/whatsapp.svg" alt="whatsapp" class="magenta mx-2 w-10 h-10" />
         {contact.phone}
     </a>              
-    <a href={contact.github} target="_blank" class="flex items-center text-lg md:text-md font-bold text-primary font-poppins hover:text-magenta">
-        <img src="/svg/github.svg" alt="github" class="magenta mx-2 w-12 h-12" /> GitHub</a>
-    <a href={contact.linkedin} target="_blank" class="flex items-center text-lg md:text-md font-bold text-primary font-poppins hover:text-magenta">
-        <img src="/svg/linkedin.svg" alt="linkedin" class="mx-2 w-12 h-12" /> LinkedIn</a>
+    <a href={contact.github} target="_blank" class="flex items-center text-lg md:text-sm font-bold text-primary font-poppins hover:text-magenta">
+        <img src="/svg/github.svg" alt="github" class="magenta mx-2 w-10 h-10" /> GitHub</a>
+    <a href={contact.linkedin} target="_blank" class="flex items-center text-lg md:text-sm font-bold text-primary font-poppins hover:text-magenta">
+        <img src="/svg/linkedin.svg" alt="linkedin" class="mx-2 w-10 h-10" /> LinkedIn</a>
   </div>
 </section>
