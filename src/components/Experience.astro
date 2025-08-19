@@ -3,11 +3,14 @@ const { experience } = Astro.props
 //const experience = es.experience;
 const job = experience.job;
 ---
-<section id={experience.id} class="mx-auto px-6 py-12 bg-gradient-to-t from-primary via-text-main to-text-main">
-  <h2 class="text-primary text-4xl font-bold text-center mb-10 font-poppins">{experience.title}</h2>
+<section id={experience.id} class="title-section mx-auto px-6 py-12 bg-gradient-to-t from-primary via-text-main to-text-main">
+  <h2 data-aos="fade-down"
+      data-aos-duration="2000"
+      class="text-primary text-4xl font-bold text-center mb-10 font-poppins">{experience.title}</h2>
   <!-- BLOQUE 2 -->
   <div data-aos="fade-up"
-      data-aos-duration="2000" class="relative bg-text-main shadow-lg rounded-2xl p-6 mb-10 border-l-8 border-primary">
+       data-aos-duration="2000"
+       class="relative bg-text-main shadow-lg rounded-2xl p-6 mb-10 border-l-8 border-primary">
     <div class="flex items-center gap-2 mb-2">
       <!-- Ícono -->
       <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2"

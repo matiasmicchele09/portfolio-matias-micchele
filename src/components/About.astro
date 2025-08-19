@@ -7,8 +7,10 @@ const { about } = Astro.props;
       </path>
   </svg>
 </div>
-<section id={about.id} class="py-12 px-6 bg-main-bg">
-  <div class="max-w-5xl mx-auto" data-aos="fade-right">
+<section id={about.id} class="title-section py-6 px-6 bg-main-bg">
+  <div data-aos="flip-up"
+       data-aos-duration="2000" 
+       class="max-w-5xl mx-auto">
     <h2 class="text-3xl font-bold text-magenta mb-6">{about.title}</h2>
     <span class="text-text-main text-lg leading-relaxed font-inter" set:html={about.description}></span>        
   </div>

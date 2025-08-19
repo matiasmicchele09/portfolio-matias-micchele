@@ -4,6 +4,10 @@
 /* Importa los estilos de AOS */
 /* filepath: src/styles/global.css */
 /* @import 'aos/dist/aos.css'; */
+
+.title-section{
+    scroll-margin-top: 80px; /* altura de tu navbar */
+}
 .project-shape-top {
     position: relative;
     top: 0;

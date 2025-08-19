@@ -10,10 +10,8 @@ const { lang, t } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css"
-    />
+		<link rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css"/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{t.title}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />	
@@ -23,19 +21,21 @@ const { lang, t } = Astro.props;
 	<body>
 		<slot />
 		<Analytics/>
-		 <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+		<script
+		 is:inline
+		 src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js">
+		</script>
 
-    <script is:inline>
-      document.addEventListener("DOMContentLoaded", () => {
-        AOS.init({
-          offset: 120,
-          duration: 400,
-          once: false,
-        });
-      });
-    </script>
+		<script is:inline>
+		document.addEventListener("DOMContentLoaded", () => {
+			AOS.init({
+			offset: 120,
+			duration: 400,
+			once: false,
+			mirror: true,
+			});
+		});
+		</script>
 		
 	</body>
 </html>
