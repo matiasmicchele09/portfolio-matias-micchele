@@ -25,7 +25,8 @@ const { project, id, technologiesText } = Astro.props;
   onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}
 > 
     <div class="relative flex flex-col items-center max-w-xl mx-auto bg-gradient-to-t from-white to-text-main rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform border overflow-hidden group
-    before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-2 before:rounded-l-xl before:bg-gradient-to-b before:from-primary before:to-magenta"
+    before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-2 before:rounded-l-xl before:bg-gradient-to-b before:from-primary before:to-magenta
+    max-h-[90vh] overflow-y-auto"
     onclick="event.stopPropagation()">        
         <!-- Contenido -->
         <div class="p-6">
