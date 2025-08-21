@@ -27,7 +27,7 @@ const { data, lang } = Astro.props;
       aria-labelledby="hs-navbar-alignment-collapse"
     >
       <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-        <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-10 font-semibold font-heading text-xl text-left w-full">
+        <ul class="flex flex-col items-center sm:flex-row space-y-2 sm:space-y-0 sm:space-x-10 font-semibold font-heading text-xl text-left w-full">
           {
             data.map((item: any) => (
               <li>
@@ -42,7 +42,7 @@ const { data, lang } = Astro.props;
           }
         </ul>
         <!-- Bandera de idioma -->
-        <div class="relative ml-0 sm:ml-4 mt-4 sm:mt-0">
+        <div class="relative flex flex-col items-center ml-0 sm:ml-4 mt-4 sm:mt-0">
           <button id="lang-toggle" class="flex items-center focus:outline-none">
             <img id="current-flag" src={`/svg/${lang}.svg`} alt={lang} class="w-8 h-8" />
             <svg class="w-4 h-4 ml-1 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ const { data, lang } = Astro.props;
             </svg>
           </button>
 
-          <div id="lang-dropdown" class="absolute left-0 mt-2 w-32 bg-text-main border shadow-lg z-10 hidden">
+          <div id="lang-dropdown" class="absolute items-center w-32 bg-text-main border shadow-lg z-10 hidden" style="margin-top: 40px;">
             <button class="w-full flex items-center px-2 py-1 hover:bg-main-bg hover:text-text-main" data-flag="es" data-img="/svg/es.svg">
               <img src="/svg/es.svg" alt="Español" class="w-8 h-8" />
               <span class="ml-2 text-sm">Español</span>
