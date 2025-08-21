@@ -45,8 +45,14 @@ interface Props {
 
                {/* Puntos clave  */}
                <div class="my-4">
-                <button class="bg-primary font-poppins text-main rounded-full py-2 px-4 hover:bg-magenta"
-                        onclick={`document.getElementById('modal-project-${index}').classList.remove('hidden'); document.getElementById('modal-excellency-${index}').classList.add('flex');`}>{projects.textButton}</button>                  
+                <button
+  class="bg-primary font-poppins text-main rounded-full py-2 px-4 hover:bg-magenta"
+  onclick={`document.getElementById('modal-project-${index}').classList.remove('hidden'); document.body.classList.add('overflow-hidden');`}
+
+>
+  {projects.textButton}
+</button>
+
                 </div>
                 
                 {/* Tecnologías */}
