@@ -1,153 +1,151 @@
 {
-    "language": "es",
-    "languageName": "Español",
-    "title": "Dev. Matias Micchele",
-    "navbar":[
-        {
-            "name":"Principal",
-            "path":"#principal"            
-        },
-        {
-            "name":"Experiencia",
-            "path":"#experiencia"            
-        },
-        {
-            "name":"Proyectos",
-            "path":"#proyectos"            
-        },
-        {
-            "name":"Sobre Mí",
-            "path":"#sobre-mi"            
-        },        
-        {
-            "name":"Contacto",
-            "path":"#contacto"
-        }
-    ],
-    "hero":{
-        "id": "principal",
-        "message": "¡Hola! Soy <span class='text-primary'>Matías</span>, desarrollador Fullstack",
-        "description": "Desarrollador Fullstack con más de 4 años creando soluciones web y de escritorio para negocios reales. He trabajado en proyectos del sector asegurador y contable, desarrollando plataformas a medida con Angular, Node.js, PostgreSQL y Progress OpenEdge. Mi enfoque es crear aplicaciones seguras, escalables y alineadas con los procesos de cada cliente.",
-        "technologies": {
-                    "angular":"/svg/Angular.svg",
-                    "astro":"/svg/Astro.svg",
-                    "bootstrap":"/svg/Bootstrap.svg",
-                    "css":"/svg/CSS.svg",
-                    "expressJS":"/svg/ExpressJS.svg",
-                    "html":"/svg/HTML.svg",
-                    "javascript":"/svg/Javascript.svg",
-                    "nodeJS":"/svg/NodeJS.svg",
-                    "postgreSQL":"/svg/PostgreSQL.svg",
-                    "sequelize":"/svg/Sequelize.svg",
-                    "swagger": "/svg/Swagger.svg",
-                    "tailwindCSS":"/svg/TailwindCSS.svg",
-                    "typescript":"/svg/TypeScript.svg"
-                },
-        "btn_projects": "Ver Proyectos",
-        "btn_cv": "Descargar CV"
+  "language": "es",
+  "languageName": "Español",
+  "title": "Dev. Matias Micchele",
+  "navbar": [
+    {
+      "name": "Principal",
+      "path": "#principal"
     },
-    "experience":{
-        "id": "experiencia",
-        "title": "Experiencia Laboral",
-        "job":{
-            "title_one":"Desarrollo de Aplicaciones de Escritorio (Progress OpenEdge)",
-            "duration_one": "2020 – Actualidad",
-            "description_one": "Desde 2020 participo en el desarrollo, evolución y mantenimiento de aplicaciones de escritorio utilizando Progress OpenEdge. Me especializo en diseñar soluciones completas para necesidades funcionales específicas, integrando lógica de negocio, reportes personalizados y soporte a usuarios.",
-            "tasks_one":"<li>Analizo, diseño e implemento soluciones completas para nuevos programas y funcionalidades en sistemas existentes.</li> <li>Participo activamente en procesos de prueba y corrección, garantizando la integración exitosa de módulos en el sistema.</li> <li>Redacto manuales de usuario claros y accesibles, facilitando la adopción de las aplicaciones por parte de usuarios finales.</li><li>Diseño y genero reportes personalizados según requerimientos, optimizando la toma de decisiones con información oportuna.</li>",
-            "title_two":"Desarrollo Full-Stack con Angular y Progress OpenEdge",
-            "duration_two": "2023 – Actualidad",
-            "description_two": "Desde 2023 formo parte de un equipo que desarrolla una plataforma web integral para gestión de seguros. Participo activamente en el diseño UX, desarrollo frontend con Angular 17 y la integración con servicios backend, aportando soluciones modulares, seguras y escalables.",
-            "tasks_two":"<li>Asisto a reuniones de diseño y UX para definir flujos de trabajo, especificaciones y experiencias de usuario.</li><li>Desarrollo con Angular 17, aplicando buenas prácticas de modularización y estructuración de código.</li><li>Implemento rutas protegidas, lazy loading y organización modular.</li><li>Creo y consumo servicios con Angular Services y Observables.</li><li>Diseño flujos de login, guards personalizados y manejo de permisos.</li><li>Diseño UI y componentes con Angular Material y Bootstrap.</li><li>Integro librerías externas (ej. FontAwesome) y administro recursos estáticos.</li><li>Implemento formularios complejos con Reactive Forms y validaciones.</li><li>Gestiono versiones con Git y colaboro mediante pull requests.</li>"        
-        }
+    {
+      "name": "Experiencia",
+      "path": "#experiencia"
     },
-    "projects":{
-        "id": "proyectos",
-        "title":"Proyectos Propios",
-        "project":[
-            {
-                "client": "Blue Planet",
-                "name": "Sitio Web (One Page)",
-                "img":"/images/blue-planet.webp",
-                "alt":"Sitio Web Blue Planet",
-                "description": "Trabajo en un sitio web con Astro, enfocado en mostrar la propuesta de valor, servicios, equipo y visión de una empresa de Francia del sector geoespacial. El sitio está diseñado para ser visualmente atractivo, interactivo y accesible desde cualquier dispositivo.",
-                "duration":"Junio 2025 - Julio 2025",
-                "keypoints":"<li>Participo de reuniones, en inglés, con el cliente donde se define el UI de las secciones que integran la web, como asi el tipo de información que debe ir en cada una.</li><li>Desarrollo el sitio web (one page) corporativo con Astro y JavaScript, aplicando una arquitectura de componentes modular para un sitio estático de alto rendimiento.</li><li>Implemento estilos con Tailwind CSS.</li><li>Incorporo micro-interacciones y animaciones avanzadas (efecto máquina de escribir, transiciones suaves, Animation On Scroll (AOS)) para enriquecer la UX.</li><li>Optimizo la performance usando lazy loading, formatos de imagen WebP y una estructura de carpetas clara y documentada.</li><li>Potencio el SEO mediante una estructura semántica, metadatos adecuados y configuración de rutas estáticas.</li><li>Gestiono dependencias con npm y mantengo el repositorio en GitHub ordenado, con versionado y documentación de configuración y scripts.</li>",
-                "technologies":{
-                    "astro":"/svg/Astro.svg",
-                    "tailwindCSS":"/svg/TailwindCSS.svg",
-                    "javascript":"/svg/Javascript.svg"
-                },
-                "link":"https://www.blueplanet-sat.com/",
-                "textLink":"Ver Proyecto",
-                "repository":"https://github.com/blueplanet-sat/bplanet-template",
-                "textRepository":"Ver Código"
-            },
-            {
-                "client": "Estudio Contable De Paolo",
-                "name": "SGC-App",
-                "img":"/images/frontend-app.webp",
-                "alt":"App Estudio Contable De Paolo",
-                "description": "Diseño y desarrollo un CRM web moderno en Angular 16 con TypeScript, empleando arquitectura modular y lazy loading para optimizar el rendimiento.",
-                "duration":"Abril 2025 - Actualidad",
-                "keypoints":"<li>Implemento un CRUD completo para clientes, provincias, bancos y condiciones fiscales, garantizando la integridad y consistencia de los datos.</li><li>Construyo un dashboard interactivo con Chart.js para mostrar KPI y métricas en tiempo real, facilitando el análisis de datos.</li><li>Aseguro la protección de rutas y sesiones mediante un sistema de autenticación robusto con guards, interceptors HTTP y validación de sesiones.</li><li>Aplico programación reactiva con RxJS (BehaviorSubject) para la gestión de estado y el manejo eficiente de flujos de datos asincrónicos.</li><li>Desarrollo una interfaz responsive usando Bootstrap 5 y SweetAlert2 para notificaciones personalizadas, ofreciendo una experiencia de usuario fluida en distintos dispositivos.</li><li>Centralizo el manejo de errores y logging con interceptors HTTP, mejorando la trazabilidad y el debugging.</li><li>Escribo pruebas unitarias e integrales con Jasmine y Karma, reforzando la calidad y estabilidad del sistema.</li><li>Adopto buenas prácticas de código limpio, separación de responsabilidades y documentación, facilitando la escalabilidad y mantenibilidad del proyecto.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
-                "technologies":{
-                    "angular":"/svg/Angular.svg",
-                    "typescript":"/svg/TypeScript.svg",
-                    "html":"/svg/HTML.svg",
-                    "css":"/svg/CSS.svg",
-                    "bootstrap":"/svg/Bootstrap.svg"
-                },
-                "link":"",
-                "textLink":"Ver Proyecto",
-                "repository":"https://github.com/matiasmicchele09/SGC-App",
-                "textRepository":"Ver Código"
-           
-            },
-            {
-                "client": "Estudio Contable De Paolo",
-                "name": "SGC-API",
-                "img":"/images/img-backend.webp",
-                "alt":"API Estudio Contable De Paolo",
-                "description": "API RESTful completa para gestión de clientes y usuarios con autenticación JWT, base de datos PostgreSQL y documentación automática.",
-                "duration":"Abril 2025 - Actualidad",
-                "keypoints":"<li>Diseño e implemento una API RESTful en Node.js y Express.js para la gestión de clientes, usuarios (con roles y permisos), bancos, provincias y otras entidades clave.</li><li>Modelo y gestiono la base de datos en PostgreSQL utilizando Sequelize ORM, definiendo relaciones complejas y migraciones automáticas.</li><li>Aseguro la autenticación y autorización con JWT y bcrypt, desarrollando middleware personalizado para validación de tokens y gestión segura de cookies.</li><li>Documento automáticamente la API con Swagger.</li><li>Aplico arquitectura MVC y patrón middleware, modularizando rutas, controladores y modelos para maximizar la escalabilidad y la mantenibilidad del código.</li><li>Configuro entornos de ejecución (dev, prod, test) mediante dotenv y scripts npm, garantizando consistencia en variables de entorno y flujos de despliegue.</li><li>Implemento buenas prácticas de código limpio, seguridad (cifrado de contraseñas y validación de tokens) y documentación, asegurando un sistema robusto y fácilmente extensible.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
-                "technologies":{
-                    "postgreSQL":"/svg/PostgreSQL.svg",
-                    "nodeJS":"/svg/NodeJS.svg",
-                    "expressJS":"/svg/ExpressJS.svg",
-                    "swagger": "/svg/Swagger.svg",
-                    "sequelize":"/svg/Sequelize.svg"               
-                },
-                "link":"",
-                "textLink":"Ver Proyecto",
-                "repository":"https://github.com/matiasmicchele09/APIRest---SGC",
-                "textRepository":"Ver Código"
-            }                     
-        ],
-        "textButton":"Leer Más",
-        "technologiesText":"Tecnologías Utilizadas"
+    {
+      "name": "Proyectos",
+      "path": "#proyectos"
     },
-    "about":{
-        "id": "sobre-mi",
-        "title": "Sobre Mí",
-        "description": "Hola, soy Matías Micchele, Ingeniero en Sistemas de Información graduado en la <b class='text-magenta'>Universidad Tecnológica Nacional – Facultad Regional Rosario, Argentina</b>. </br></br>Desde 2020 trabajo en el desarrollo de aplicaciones de escritorio utilizando <b class='text-magenta'>Progress OpenEdge</b>, creando soluciones robustas para el sector asegurador. A partir de 2023, comencé a especializarme también en el desarrollo frontend con <b class='text-magenta'>Angular</b>, sumando tecnologías como <b class='text-magenta'>HTML</b>, <b class='text-magenta'>CSS</b>, <b class='text-magenta'>Angular Material</b> y <b class='text-magenta'>TailwindCSS</b> para construir interfaces web modernas y responsivas. </br></br>Además de mi trabajo en relación de dependencia, disfruto aprender nuevas tecnologías y crear mis propios proyectos personales, siempre enfocados en la <b class='text-magenta'>mejora continua y la experiencia del usuario</b>. En ellos exploro el stack completo, utilizando <b class='text-magenta'>Node.js</b>, <b class='text-magenta'>Express</b> y <b class='text-magenta'>PostgreSQL</b> en el backend, y aplicando buenas prácticas como la implementación de <b class='text-magenta'>APIs RESTful</b>, el uso de ORM como <b class='text-magenta'>Sequelize</b> y el diseño adaptable a distintos dispositivos. </br></br>Colaboro activamente en equipos usando herramientas como <b class='text-magenta'>Git</b>, <b class='text-magenta'>GitLab</b>, <b class='text-magenta'>Jira y Confluence</b>, participando tanto en el análisis como en el desarrollo e implementación de soluciones. </br></br>Me considero una persona <b class='text-magenta'>proactiva</b>, <b class='text-magenta'>curiosa</b> y <b class='text-magenta'>orientada a la calidad</b>. Disfruto enfrentar desafíos que me permitan seguir creciendo como profesional y aportar valor real a los proyectos en los que participo."        
-       
+    {
+      "name": "Sobre Mí",
+      "path": "#sobre-mi"
     },
-    "contact":{
-        "id": "contacto",
-        "title": "Contacto",
-        "description": "Si te interesa mi trabajo o quieres colaborar en algún proyecto, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y retos. Puedes enviarme un correo electrónico o un mensaje de WhatsApp. También puedes encontrarme en LinkedIn o GitHub.",
-        "email": "matias.micchele@hotmail.com",
-        "phone": "+54 9 3402 673260",
-        "github":"https://github.com/matiasmicchele09",
-        "linkedin": "https://www.linkedin.com/in/matias-micchele/"
-    },
-    "footer":{
-        "name": "Matias Micchele",
-        "description": "Este sitio fue diseñado y desarrollado por mí. Todos los derechos reservados.",
-        "contact": {
-            "location": "Arroyo Seco, Santa Fe, Argentina",
-            "flag_arg": "/svg/ar.svg"
-        }
+    {
+      "name": "Contacto",
+      "path": "#contacto"
     }
+  ],
+  "hero": {
+    "id": "principal",
+    "message": "¡Hola! Soy <span class='text-primary'>Matías</span>, desarrollador Fullstack",
+    "description": "Desarrollador Fullstack con más de 4 años creando soluciones web y de escritorio para negocios reales. He trabajado en proyectos del sector asegurador y contable, desarrollando plataformas a medida con Angular, Node.js, PostgreSQL y Progress OpenEdge. Mi enfoque es crear aplicaciones seguras, escalables y alineadas con los procesos de cada cliente.",
+    "technologies": {
+      "angular": "/svg/Angular.svg",
+      "astro": "/svg/Astro.svg",
+      "bootstrap": "/svg/Bootstrap.svg",
+      "css": "/svg/CSS.svg",
+      "expressJS": "/svg/ExpressJS.svg",
+      "html": "/svg/HTML.svg",
+      "javascript": "/svg/Javascript.svg",
+      "nodeJS": "/svg/NodeJS.svg",
+      "postgreSQL": "/svg/PostgreSQL.svg",
+      "sequelize": "/svg/Sequelize.svg",
+      "swagger": "/svg/Swagger.svg",
+      "tailwindCSS": "/svg/TailwindCSS.svg",
+      "typescript": "/svg/TypeScript.svg"
+    },
+    "btn_projects": "Ver Proyectos",
+    "btn_cv": "Descargar CV"
+  },
+  "experience": {
+    "id": "experiencia",
+    "title": "Experiencia Laboral",
+    "job": {
+      "title_one": "Desarrollo de Aplicaciones de Escritorio (Progress OpenEdge)",
+      "duration_one": "2020 – Actualidad",
+      "description_one": "Desde 2020 participo en el desarrollo, evolución y mantenimiento de aplicaciones de escritorio utilizando Progress OpenEdge. Me especializo en diseñar soluciones completas para necesidades funcionales específicas, integrando lógica de negocio, reportes personalizados y soporte a usuarios.",
+      "tasks_one": "<li>Analizo, diseño e implemento soluciones completas para nuevos programas y funcionalidades en sistemas existentes.</li> <li>Participo activamente en procesos de prueba y corrección, garantizando la integración exitosa de módulos en el sistema.</li> <li>Redacto manuales de usuario claros y accesibles, facilitando la adopción de las aplicaciones por parte de usuarios finales.</li><li>Diseño y genero reportes personalizados según requerimientos, optimizando la toma de decisiones con información oportuna.</li>",
+      "title_two": "Desarrollo Full-Stack con Angular y Progress OpenEdge",
+      "duration_two": "2023 – Actualidad",
+      "description_two": "Desde 2023 formo parte de un equipo que desarrolla una plataforma web integral para gestión de seguros. Participo activamente en el diseño UX, desarrollo frontend con Angular 17 y la integración con servicios backend, aportando soluciones modulares, seguras y escalables.",
+      "tasks_two": "<li>Asisto a reuniones de diseño y UX para definir flujos de trabajo, especificaciones y experiencias de usuario.</li><li>Desarrollo con Angular 17, aplicando buenas prácticas de modularización y estructuración de código.</li><li>Implemento rutas protegidas, lazy loading y organización modular.</li><li>Creo y consumo servicios con Angular Services y Observables.</li><li>Diseño flujos de login, guards personalizados y manejo de permisos.</li><li>Diseño UI y componentes con Angular Material y Bootstrap.</li><li>Integro librerías externas (ej. FontAwesome) y administro recursos estáticos.</li><li>Implemento formularios complejos con Reactive Forms y validaciones.</li><li>Gestiono versiones con Git y colaboro mediante pull requests.</li>"
+    }
+  },
+  "projects": {
+    "id": "proyectos",
+    "title": "Proyectos Propios",
+    "project": [
+      {
+        "client": "Blue Planet",
+        "name": "Sitio Web (One Page)",
+        "img": "/images/blue-planet.webp",
+        "alt": "Sitio Web Blue Planet",
+        "description": "Trabajo en un sitio web con Astro, enfocado en mostrar la propuesta de valor, servicios, equipo y visión de una empresa de Francia del sector geoespacial. El sitio está diseñado para ser visualmente atractivo, interactivo y accesible desde cualquier dispositivo.",
+        "duration": "Junio 2025 - Julio 2025",
+        "keypoints": "<li>Participo de reuniones, en inglés, con el cliente donde se define el UI de las secciones que integran la web, como asi el tipo de información que debe ir en cada una.</li><li>Desarrollo el sitio web (one page) corporativo con Astro y JavaScript, aplicando una arquitectura de componentes modular para un sitio estático de alto rendimiento.</li><li>Implemento estilos con Tailwind CSS.</li><li>Incorporo micro-interacciones y animaciones avanzadas (efecto máquina de escribir, transiciones suaves, Animation On Scroll (AOS)) para enriquecer la UX.</li><li>Optimizo la performance usando lazy loading, formatos de imagen WebP y una estructura de carpetas clara y documentada.</li><li>Potencio el SEO mediante una estructura semántica, metadatos adecuados y configuración de rutas estáticas.</li><li>Gestiono dependencias con npm y mantengo el repositorio en GitHub ordenado, con versionado y documentación de configuración y scripts.</li>",
+        "technologies": {
+          "astro": "/svg/Astro.svg",
+          "tailwindCSS": "/svg/TailwindCSS.svg",
+          "javascript": "/svg/Javascript.svg"
+        },
+        "link": "https://www.blueplanet-sat.com/",
+        "textLink": "Ver Proyecto",
+        "repository": "https://github.com/blueplanet-sat/bplanet-template",
+        "textRepository": "Ver Código"
+      },
+      {
+        "client": "Estudio Contable De Paolo",
+        "name": "Nexo Studio",
+        "img": "/images/frontend-app.webp",
+        "alt": "App Estudio Contable De Paolo",
+        "description": "Diseño y desarrollo un CRM web moderno en Angular 16 con TypeScript, empleando arquitectura modular y lazy loading para optimizar el rendimiento.",
+        "duration": "Abril 2025 - Actualidad",
+        "keypoints": "<li>Implemento un CRUD completo para clientes, provincias, bancos y condiciones fiscales, garantizando la integridad y consistencia de los datos.</li><li>Construyo un dashboard interactivo con Chart.js para mostrar KPI y métricas en tiempo real, facilitando el análisis de datos.</li><li>Aseguro la protección de rutas y sesiones mediante un sistema de autenticación robusto con guards, interceptors HTTP y validación de sesiones.</li><li>Aplico programación reactiva con RxJS (BehaviorSubject) para la gestión de estado y el manejo eficiente de flujos de datos asincrónicos.</li><li>Desarrollo una interfaz responsive usando Bootstrap 5 y SweetAlert2 para notificaciones personalizadas, ofreciendo una experiencia de usuario fluida en distintos dispositivos.</li><li>Centralizo el manejo de errores y logging con interceptors HTTP, mejorando la trazabilidad y el debugging.</li><li>Escribo pruebas unitarias e integrales con Jasmine y Karma, reforzando la calidad y estabilidad del sistema.</li><li>Adopto buenas prácticas de código limpio, separación de responsabilidades y documentación, facilitando la escalabilidad y mantenibilidad del proyecto.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
+        "technologies": {
+          "angular": "/svg/Angular.svg",
+          "typescript": "/svg/TypeScript.svg",
+          "html": "/svg/HTML.svg",
+          "css": "/svg/CSS.svg",
+          "bootstrap": "/svg/Bootstrap.svg"
+        },
+        "link": "https://nexostudio.vercel.app/auth/login",
+        "textLink": "Ver Proyecto",
+        "repository": "https://github.com/matiasmicchele09/SGC-App",
+        "textRepository": "Ver Código"
+      },
+      {
+        "client": "Estudio Contable De Paolo",
+        "name": "NexoStudio API",
+        "img": "/images/img-backend.webp",
+        "alt": "API Estudio Contable De Paolo",
+        "description": "API RESTful completa para gestión de clientes y usuarios con autenticación JWT, base de datos PostgreSQL y documentación automática.",
+        "duration": "Abril 2025 - Actualidad",
+        "keypoints": "<li>Diseño e implemento una API RESTful en Node.js y Express.js para la gestión de clientes, usuarios (con roles y permisos), bancos, provincias y otras entidades clave.</li><li>Modelo y gestiono la base de datos en PostgreSQL utilizando Sequelize ORM, definiendo relaciones complejas y migraciones automáticas.</li><li>Aseguro la autenticación y autorización con JWT y bcrypt, desarrollando middleware personalizado para validación de tokens y gestión segura de cookies.</li><li>Documento automáticamente la API con Swagger.</li><li>Aplico arquitectura MVC y patrón middleware, modularizando rutas, controladores y modelos para maximizar la escalabilidad y la mantenibilidad del código.</li><li>Configuro entornos de ejecución (dev, prod, test) mediante dotenv y scripts npm, garantizando consistencia en variables de entorno y flujos de despliegue.</li><li>Implemento buenas prácticas de código limpio, seguridad (cifrado de contraseñas y validación de tokens) y documentación, asegurando un sistema robusto y fácilmente extensible.</li><li>Versiono y gestiono todo el código en GitHub, manteniendo documentación y control de versiones para asegurar trazabilidad.</li>",
+        "technologies": {
+          "postgreSQL": "/svg/PostgreSQL.svg",
+          "nodeJS": "/svg/NodeJS.svg",
+          "expressJS": "/svg/ExpressJS.svg",
+          "swagger": "/svg/Swagger.svg",
+          "sequelize": "/svg/Sequelize.svg"
+        },
+        "link": "",
+        "textLink": "Ver Proyecto",
+        "repository": "https://github.com/matiasmicchele09/APIRest---SGC",
+        "textRepository": "Ver Código"
+      }
+    ],
+    "textButton": "Leer Más",
+    "technologiesText": "Tecnologías Utilizadas"
+  },
+  "about": {
+    "id": "sobre-mi",
+    "title": "Sobre Mí",
+    "description": "Hola, soy Matías Micchele, Ingeniero en Sistemas de Información graduado en la <b class='text-magenta'>Universidad Tecnológica Nacional – Facultad Regional Rosario, Argentina</b>. </br></br>Desde 2020 trabajo en el desarrollo de aplicaciones de escritorio utilizando <b class='text-magenta'>Progress OpenEdge</b>, creando soluciones robustas para el sector asegurador. A partir de 2023, comencé a especializarme también en el desarrollo frontend con <b class='text-magenta'>Angular</b>, sumando tecnologías como <b class='text-magenta'>HTML</b>, <b class='text-magenta'>CSS</b>, <b class='text-magenta'>Angular Material</b> y <b class='text-magenta'>TailwindCSS</b> para construir interfaces web modernas y responsivas. </br></br>Además de mi trabajo en relación de dependencia, disfruto aprender nuevas tecnologías y crear mis propios proyectos personales, siempre enfocados en la <b class='text-magenta'>mejora continua y la experiencia del usuario</b>. En ellos exploro el stack completo, utilizando <b class='text-magenta'>Node.js</b>, <b class='text-magenta'>Express</b> y <b class='text-magenta'>PostgreSQL</b> en el backend, y aplicando buenas prácticas como la implementación de <b class='text-magenta'>APIs RESTful</b>, el uso de ORM como <b class='text-magenta'>Sequelize</b> y el diseño adaptable a distintos dispositivos. </br></br>Colaboro activamente en equipos usando herramientas como <b class='text-magenta'>Git</b>, <b class='text-magenta'>GitLab</b>, <b class='text-magenta'>Jira y Confluence</b>, participando tanto en el análisis como en el desarrollo e implementación de soluciones. </br></br>Me considero una persona <b class='text-magenta'>proactiva</b>, <b class='text-magenta'>curiosa</b> y <b class='text-magenta'>orientada a la calidad</b>. Disfruto enfrentar desafíos que me permitan seguir creciendo como profesional y aportar valor real a los proyectos en los que participo."
+  },
+  "contact": {
+    "id": "contacto",
+    "title": "Contacto",
+    "description": "Si te interesa mi trabajo o quieres colaborar en algún proyecto, no dudes en contactarme. Siempre estoy abierto a nuevas oportunidades y retos. Puedes enviarme un correo electrónico o un mensaje de WhatsApp. También puedes encontrarme en LinkedIn o GitHub.",
+    "email": "matias.micchele@hotmail.com",
+    "phone": "+54 9 3402 673260",
+    "github": "https://github.com/matiasmicchele09",
+    "linkedin": "https://www.linkedin.com/in/matias-micchele/"
+  },
+  "footer": {
+    "name": "Matias Micchele",
+    "description": "Este sitio fue diseñado y desarrollado por mí. Todos los derechos reservados.",
+    "contact": {
+      "location": "Arroyo Seco, Santa Fe, Argentina",
+      "flag_arg": "/svg/ar.svg"
+    }
+  }
 }
