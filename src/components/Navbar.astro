@@ -42,7 +42,7 @@ const { data, lang } = Astro.props;
           }
         </ul>
         <!-- Bandera de idioma -->
-        <div class="relative flex flex-col items-center ml-0 sm:ml-4 mt-4 sm:mt-0">
+        <!-- <div class="relative flex flex-row items-center ml-0 sm:ml-4 mt-4 sm:mt-0">
           <button id="lang-toggle" class="flex items-center focus:outline-none">
             <img id="current-flag" src={`/svg/${lang}.svg`} alt={lang} class="w-8 h-8" />
             <svg class="w-4 h-4 ml-1 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,43 @@ const { data, lang } = Astro.props;
               <span class="ml-2 text-sm">English</span>
             </button>
           </div>
+        </div> -->
+       <!-- <div class="relative flex flex-row items-center ml-0 sm:ml-4 mt-4 sm:mt-0" >
+        <button class="w-full flex items-center px-2 py-1 hover:bg-main-bg hover:text-text-main" data-flag="es" data-img="/svg/es.svg" title="Español">
+          <img src="/svg/es.svg" alt="Español" class="w-8 h-8" />              
+        </button>
+        <button class="w-full flex items-center px-2 py-1 hover:bg-main-bg hover:text-text-main" data-flag="en" data-img="/svg/en.svg" title="English">
+          <img src="/svg/en.svg" alt="English" class="w-8 h-8" />
+        </button>
+       </div> -->
+       <div
+          class="mt-6 sm:mt-0 w-full sm:w-auto flex justify-center sm:justify-start"
+        >
+          <div class="flex items-center gap-4 rounded-full px-4 py-2 ">
+            <button
+              type="button"
+              class="flex items-center justify-center hover:bg-main-bg hover:text-text-main rounded-full p-2"
+              data-flag="es"
+              data-img="/svg/es.svg"
+              title="Español"
+            >
+              <img src="/svg/es.svg" alt="Español" class="w-9 h-9" />
+            </button>
+
+            <button
+              type="button"
+              class="flex items-center justify-center hover:bg-main-bg hover:text-text-main rounded-full p-2"
+              data-flag="en"
+              data-img="/svg/en.svg"
+              title="English"
+            >
+              <img src="/svg/en.svg" alt="English" class="w-9 h-9" />
+            </button>
+          </div>
         </div>
+
+
+
       </div>
     </div>
   </nav>
@@ -80,19 +116,48 @@ const { data, lang } = Astro.props;
     }
 
     // Toggle del selector de idioma
-    const langToggle = document.getElementById('lang-toggle');
-    const langDropdown = document.getElementById('lang-dropdown');
-    const currentFlag = document.getElementById('current-flag');
+    // const langToggle = document.getElementById('lang-toggle');
+    // const langDropdown = document.getElementById('lang-dropdown');
+    // const currentFlag = document.getElementById('current-flag');
 
-    langToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langDropdown.classList.toggle('hidden');
-    });
+    // langToggle.addEventListener('click', (e) => {
+    //   e.stopPropagation();
+    //   langDropdown.classList.toggle('hidden');
+    // });
 
-    // Selector de idioma con rutas limpias (/es, /en)
-    langDropdown.querySelectorAll('button').forEach(btn => {
+    // // Selector de idioma con rutas limpias (/es, /en)
+    // langDropdown.querySelectorAll('button').forEach(btn => {
+    //   btn.addEventListener('click', (e) => {
+    //     e.stopPropagation();
+    //     const selectedLang = btn.getAttribute('data-flag');
+    //     const pathname = window.location.pathname;
+
+    //     // Dividir la URL en partes
+    //     const parts = pathname.split('/').filter(Boolean);
+
+    //     // Reemplazá el idioma (primer segmento)
+    //     if (parts.length > 0 && (parts[0] === 'es' || parts[0] === 'en')) {
+    //       parts[0] = selectedLang;
+    //     } else {
+    //       parts.unshift(selectedLang);
+    //     }
+
+    //     // Redirige a la nueva URL
+    //     window.location.pathname = '/' + parts.join('/');
+    //   });
+    // });
+
+
+    // // Cierra el dropdown si hacés click fuera
+    // document.addEventListener('click', () => {
+    //   langDropdown.classList.add('hidden');
+    // });
+
+    // Selector de idioma (sin dropdown)
+    document.querySelectorAll('button[data-flag]').forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        e.stopPropagation();
+        e.preventDefault();
+
         const selectedLang = btn.getAttribute('data-flag');
         const pathname = window.location.pathname;
 
@@ -106,16 +171,12 @@ const { data, lang } = Astro.props;
           parts.unshift(selectedLang);
         }
 
-        // Redirige a la nueva URL
-        window.location.pathname = '/' + parts.join('/');
+        // Mantener query params y hash (opcional, pero mejor UX)
+        const newPath = '/' + parts.join('/');
+        window.location.href = newPath + window.location.search + window.location.hash;
       });
     });
 
-
-    // Cierra el dropdown si hacés click fuera
-    document.addEventListener('click', () => {
-      langDropdown.classList.add('hidden');
-    });
 
     // Cierra el menú (mobile) al hacer clic en un enlace
     menu.querySelectorAll('a').forEach(link => {
